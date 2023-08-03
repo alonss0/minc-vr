@@ -19,7 +19,7 @@ public class OnButtonXHold : MonoBehaviour
         if (OVRInput.Get(OVRInput.Button.Three))
         {
             pointerDownTimer += Time.deltaTime;
-            OVRInput.SetControllerVibration(0, 5);
+            OVRInput.SetControllerVibration(0, 1);
             screenFade.SetUIFade(pointerDownTimer);
             if (pointerDownTimer >= requiredHoldTime)
             {

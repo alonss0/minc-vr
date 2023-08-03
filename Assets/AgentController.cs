@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 public class AgentController : MonoBehaviour
@@ -24,7 +25,7 @@ public class AgentController : MonoBehaviour
     void Update()
     {
         // Perrito en Idle
-        dogAnimator.SetFloat("locomotion", 0);
+        dogAnimator.SetBool("move", false);
         if (movingTo1)
         {
             moveToTarget1(target1);
@@ -44,7 +45,7 @@ public class AgentController : MonoBehaviour
         movingTo1 = true;
         if (ReferenceEquals(target, target1))
         {
-            dogAnimator.SetFloat("locomotion", 1);
+            dogAnimator.SetBool("move", true);
             dogAgent.SetDestination(target.position);
         }
     }
@@ -54,7 +55,7 @@ public class AgentController : MonoBehaviour
         movingTo2 = true;
         if (ReferenceEquals(target, target2))
         {
-            dogAnimator.SetFloat("locomotion", 1);
+            dogAnimator.SetBool("move", true);
             dogAgent.SetDestination(target.position);
         }
     }
@@ -64,7 +65,7 @@ public class AgentController : MonoBehaviour
         movingTo3 = true;
         if (ReferenceEquals(target, target3))
         {
-            dogAnimator.SetFloat("locomotion", 1);
+            dogAnimator.SetBool("move", true);
             dogAgent.SetDestination(target.position);
         }
     }
@@ -73,17 +74,18 @@ public class AgentController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("mTarget1"))
         {
-            dogAnimator.SetFloat("locomotion", 0);
+            dogAnimator.SetBool("move", false);
             movingTo1 = false;
+            dogAnimator.SetBool("girar", true);
         }
         if (other.gameObject.CompareTag("mTarget2"))
         {
-            dogAnimator.SetFloat("locomotion", 0);
+            dogAnimator.SetBool("move", false);
             movingTo2 = false;
         }
         if (other.gameObject.CompareTag("mTarget3"))
         {
-            dogAnimator.SetFloat("locomotion", 0);
+            dogAnimator.SetBool("move", false);
             movingTo3 = false;
         }
     }

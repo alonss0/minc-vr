@@ -6,9 +6,16 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     //public GameObject fader;
-    public void NextScene()
+    public void FirstScene()
     {
-        //fader.gameObject.GetComponent<OVRScreenFade>().FadeOut();
         SceneManager.LoadScene("FirstScene");
+    }
+    public void SecondScene()
+    {
+        SceneManager.LoadScene("SecondScene");
+    }
+    public void ThirdScene()
+    {
+        SceneManager.LoadScene("ThirdScene");
     }
 }
