@@ -76,7 +76,7 @@ public class AgentController : MonoBehaviour
         {
             dogAnimator.SetBool("move", false);
             movingTo1 = false;
-            dogAnimator.SetBool("girar", true);
+            //dogAnimator.SetBool("girar", true);
         }
         if (other.gameObject.CompareTag("mTarget2"))
         {

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44204348, g: 0.45023778, b: 0.47380638, a: 1}
+  m_IndirectSpecularColor: {r: 0.44202876, g: 0.45022064, b: 0.47379425, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -255,7 +255,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Interactuando con los objetos que encontrar\xE1s sobre la mesa podr\xE1s
-    conocer m\xE1s sobre el d\xEDa a d\xEDa de Yolimar en Venezuela. Cada obejeto
+    conocer m\xE1s sobre el d\xEDa a d\xEDa de Yolimar en Venezuela. Cada objeto
     te llevar\xE1 a un escenario diferente. Elige el camino que desees.\n\nCuando
     avances en tu recorrido podr\xE1s volver a este escenario seleccionando el siguiente
     objeto:"
@@ -1156,51 +1156,6 @@ MonoBehaviour:
       m_Calls: []
   m_IsOn: 0
   _clearStateOnDrag: 0
---- !u!1 &86137793
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 86137794}
-  - component: {fileID: 86137795}
-  m_Layer: 0
-  m_Name: Collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &86137794
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86137793}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.4, z: 0.02}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1761522735}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &86137795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86137793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _collider: {fileID: 0}
 --- !u!1001 &87686107
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1524,11 +1479,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
---- !u!1 &104859511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 302807359957465670, guid: c19a2d64274b96e46aa2fae15534447c, type: 3}
-  m_PrefabInstance: {fileID: 104859508}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &104859512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 302807359957465671, guid: c19a2d64274b96e46aa2fae15534447c, type: 3}
@@ -3649,17 +3599,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 104859511}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 559911668}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: IntroScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &285649881
 MonoBehaviour:
@@ -9898,7 +9848,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Ya que probaste c\xF3mo funciona la interacci\xF3n, queremos presentarte
-    a Canela, quien ser\xE1 nuestro gu\xEDa en esta experencia. Sigue sus pasos y
+    a Canela, quien ser\xE1 nuestra gu\xEDa en esta experencia. Sigue sus pasos y
     encontrar\xE1s nuevas tareas para realizar."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16469,7 +16419,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 76a05042fe6056044997ff00fc5a7290, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 76a05042fe6056044997ff00fc5a7290, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16517,11 +16467,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76a05042fe6056044997ff00fc5a7290, type: 3}
---- !u!4 &1761522735 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 76a05042fe6056044997ff00fc5a7290, type: 3}
-  m_PrefabInstance: {fileID: 1761522734}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1761522736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 76a05042fe6056044997ff00fc5a7290, type: 3}
