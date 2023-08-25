@@ -18,6 +18,10 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("ThirdScene");
     }
+    public void FourthScene()
+    {
+        SceneManager.LoadScene("FourthScene");
+    }
     public void IntroScene()
     {
         SceneManager.LoadScene("IntroScene");
