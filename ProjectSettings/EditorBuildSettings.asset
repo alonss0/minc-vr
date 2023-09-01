@@ -12,16 +12,16 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: 5fe9c8f5155f91149a3d4ef3e53cb116
   - enabled: 1
-    path: Assets/Scenes/FirstScene.unity
+    path: Assets/Scenes/SceneGym.unity
     guid: 7fb67c57cdab32145b7b076bcc6bc018
   - enabled: 1
-    path: Assets/Scenes/SecondScene.unity
+    path: Assets/Scenes/SceneTienda.unity
     guid: e0d133dc42bac6045bbac00eed62152b
   - enabled: 1
-    path: Assets/Scenes/ThirdScene.unity
+    path: Assets/Scenes/SceneTrocha.unity
     guid: f000234983d26a342834437913c7f02f
   - enabled: 1
-    path: Assets/Scenes/FourthScene.unity
+    path: Assets/Scenes/SceneHotel.unity
     guid: 341e9b0f146393b49b45e0b48a0bf2e4
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 292ae4a3071e89644a643915cd2ea14e, type: 2}

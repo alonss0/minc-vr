@@ -6,21 +6,21 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     //public GameObject fader;
-    public void FirstScene()
+    public void SceneGym()
     {
-        SceneManager.LoadScene("FirstScene");
+        SceneManager.LoadScene("SceneGym");
     }
-    public void SecondScene()
+    public void SceneTienda()
     {
-        SceneManager.LoadScene("SecondScene");
+        SceneManager.LoadScene("SceneTienda");
     }
-    public void ThirdScene()
+    public void SceneTrocha()
     {
-        SceneManager.LoadScene("ThirdScene");
+        SceneManager.LoadScene("SceneTrocha");
     }
-    public void FourthScene()
+    public void SceneHotel()
     {
-        SceneManager.LoadScene("FourthScene");
+        SceneManager.LoadScene("SceneHotel");
     }
     public void IntroScene()
     {
